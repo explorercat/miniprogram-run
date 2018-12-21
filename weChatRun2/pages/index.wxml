@@ -1,0 +1,25 @@
+
+
+
+<view class="mainView">
+    <!--标题-->
+
+    <view class="header">
+        <image class="icon"  mode="aspectFill"/>
+        <view class="bigTitle">北邮跑步圈</view>
+        <view class="desc">Let us run - C418</view>
+    </view>
+    
+
+    
+    <view class="body">
+        <view class="widget">
+            <block wx:for="{{pageNames}}">
+                <view class="widgets__item" style="opacity:0.8" >
+                    <navigator url="{{item.id}}/{{item.id}}">{{item.name}}</navigator>
+                </view>
+            </block>
+        </view>
+    </view>
+
+</view>
